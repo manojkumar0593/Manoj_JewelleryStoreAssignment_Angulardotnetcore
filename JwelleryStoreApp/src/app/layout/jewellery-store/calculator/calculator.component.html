@@ -1,0 +1,68 @@
+<div class="row">
+  <form #myForm="ngForm">
+  <div class="col-12">
+
+    <div class="form-group" >
+
+      <label for="price" ><strong>Gold Price (per gram)</strong></label>
+      <input type="number" style="text-align: left;height: 40px;" maxlength="7" class="form-control"
+      [ngClass]="{'has-error':valPrice.touched && valPrice.invalid, 'has-success':valPrice.valid}"
+        id="price" name="price" [(ngModel)]="formData.price" placeholder="Enter gold price"
+        #valPrice = "ngModel" required />
+
+        <span class="spanerror" *ngIf="valPrice.touched && valPrice.invalid">
+          Please Enter Gold Price
+        </span>
+
+    </div>
+
+  </div>
+
+  <div class="col-12">
+    <div class="form-group" >
+      <label for="weight"><strong>Weight (grams)</strong></label>
+      <input type="number" style="text-align: left;height: 40px;" maxlength="7" class="form-control"
+      [ngClass]="{'has-error':valWeight.touched && valWeight.invalid, 'has-success':valWeight.valid}"
+        id="weight" name="weight" [(ngModel)]="formData.weight" placeholder="Enter weight"
+        #valWeight = "ngModel" required />
+
+        <span class="spanerror" *ngIf="valWeight.touched && valWeight.invalid">
+          Please Enter Weight
+        </span>
+    </div>
+  </div>
+
+  <div class="col-12">
+    <div class="form-group" >
+      <label for="totalPrice" ><strong>Total Price </strong></label>
+      <div style="text-align: left;height: 40px;"  class="form-control"
+        id="totalPrice" name="totalPrice">
+        {{formData.totalPrice | number:'1.0-2'}}
+      </div>
+
+
+    </div>
+  </div>
+
+  <div class="col-12" *ngIf="isPriviledged">
+    <div class="form-group">
+      <label for="discount"><strong>Discount %</strong></label>
+      <input type="number" style="text-align: left;height: 40px;" maxlength="7" class="form-control"
+        id="discount" name="discount" [(ngModel)]="formData.discount" placeholder="Enter discount"
+        (blur)="changeDiscount()" />
+    </div>
+  </div>
+
+  <div class="col-12" style="margin-top: 16px">
+    <button type="submit" class="btn btn-primary firstbtn" (click)="CalculateTotalPrice()">Calculate</button>
+    <button type="button" class="btn btn-secondary printScreen" [disabled]="formData.totalPrice === null || formData.totalPrice === undefined"
+      (click)="PrintToScreen()">Print To Screen</button>
+    <button type="button" class="btn btn-secondary printFile" [disabled]="formData.totalPrice === null || formData.totalPrice === undefined"
+    (click)="PrintToFile()">Print To File</button>
+    <button type="button" class="btn btn-secondary printPaper" [disabled]="formData.totalPrice === null || formData.totalPrice === undefined"
+    (click)="PrintToPaper()">Print To Paper</button>
+    <button type="button" class="btn btn-secondary reset" (click)="Reset()">Reset</button>
+  </div>
+</form>
+
+</div>

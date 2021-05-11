@@ -1,0 +1,22 @@
+
+.header-content {
+  background: #57595b;
+  color: white;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+section {
+  height: 100%;
+  background: lightgrey;
+  padding-bottom: 30px;
+}
+
+.moveRight {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}

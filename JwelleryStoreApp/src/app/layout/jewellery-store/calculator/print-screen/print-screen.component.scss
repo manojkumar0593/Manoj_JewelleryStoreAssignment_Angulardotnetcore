@@ -1,0 +1,18 @@
+tr td {
+  background-color: #f6f4bf;
+}
+
+td {
+  width: 30%;
+  border-left: 1px solid #efe34e;
+  border-bottom: 1px solid #efe34e;
+}
+
+td.ItemValue {
+  border-right: 1px solid #efe34e;
+}
+
+tr:first-child {
+  /* background: red; */
+  border-top: 1px solid #efe34e;
+}

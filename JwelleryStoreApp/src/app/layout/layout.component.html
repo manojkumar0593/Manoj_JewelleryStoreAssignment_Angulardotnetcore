@@ -1,0 +1,24 @@
+<section class="container">
+  <div class="row header-content">
+    <div class="col-8" style="font-weight:bold;">Jewellery Store</div>
+    <div class="col-4 moveRight" >
+      <div style=" float: right; font-size: 0.8em; margin-right: 20px;" title="mailto:{{user?.emailId}}">{{ user && user.userName ? 'Welcome: ' : ''}}&nbsp;{{user?.userName}}</div>
+      <div  *ngIf="user && user.emailId" >
+        <button class="logout-button" style="float: right;font-size: 0.8em;" (click)="logout()">Logout</button>
+      </div>
+    </div>
+  </div>
+  <router-outlet></router-outlet>
+
+  <footer>
+    <div class="footer-area">
+    </div>
+  </footer>
+  </section>
+  <app-loader *ngIf="displaySpinner"></app-loader>
+<p-toast>
+
+</p-toast>
+
+
+

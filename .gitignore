@@ -1,0 +1,25 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Manoj_Siemens Assignment/JwelleryStoreAPI/JewelleryStoreAPI/Jewellery.ReportHelper/obj
+/Manoj_Siemens Assignment/JwelleryStoreAPI/JewelleryStoreAPI/Jewellery.ReportHelper/bin/Debug/net5.0
+/Manoj_Siemens Assignment/JwelleryStoreAPI/JewelleryStoreAPI/JewelleryStore.DataAccess/bin/Debug/net5.0
+/Manoj_Siemens Assignment/JwelleryStoreAPI/JewelleryStoreAPI/JewelleryStore.DataAccess/obj
+/Manoj_Siemens Assignment/JwelleryStoreAPI/JewelleryStoreAPI/JewelleryStore.IntegrationTest/obj
+/Manoj_Siemens Assignment/JwelleryStoreAPI/JewelleryStoreAPI/JewelleryStore.IntegrationTest/bin/Debug/net5.0
+/Manoj_Siemens Assignment/JwelleryStoreAPI/JewelleryStoreAPI/JewelleryStore.UnitTest/bin/Debug/net5.0
+/Manoj_Siemens Assignment/JwelleryStoreAPI/JewelleryStoreAPI/JewelleryStore.UnitTest/obj
+/Manoj_Siemens Assignment/JwelleryStoreAPI/JewelleryStoreAPI/JewelleryStoreAPI/bin/Debug/net5.0
+/Manoj_Siemens Assignment/JwelleryStoreAPI/JewelleryStoreAPI/JewelleryStoreAPI/obj
+/JwelleryStoreAPI/.vs/JewelleryStoreAPI
+/JwelleryStoreAPI/Jewellery.ReportHelper/bin/Debug/net5.0
+/JwelleryStoreAPI/Jewellery.ReportHelper/obj
+/JwelleryStoreAPI/JewelleryStore.DataAccess/bin/Debug/net5.0
+/JwelleryStoreAPI/JewelleryStore.DataAccess/obj
+/JwelleryStoreAPI/JewelleryStore.IntegrationTest/bin/Debug/net5.0
+/JwelleryStoreAPI/JewelleryStore.IntegrationTest/obj
+/JwelleryStoreAPI/JewelleryStore.UnitTest/bin/Debug/net5.0
+/JwelleryStoreAPI/JewelleryStore.UnitTest/obj
+/JwelleryStoreAPI/JewelleryStoreAPI/bin/Debug/net5.0
+/JwelleryStoreAPI/JewelleryStoreAPI/obj

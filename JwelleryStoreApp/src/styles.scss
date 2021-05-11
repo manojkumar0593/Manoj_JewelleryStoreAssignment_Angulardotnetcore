@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+
+* {
+  font-size: 14px;
+}
+
+.form-group {
+  margin-bottom: 10px;
+  width: 50%;
+  margin-left: 20px;
+}
+
+.has-error {
+  border: 1px solid red;
+}
+
+.spanerror {
+  color: red;
+}

@@ -1,0 +1,42 @@
+<div class="col-12 bodyContainer">
+  <table class="storeTable table table-responsive" *ngIf="storedData">
+    <tbody>
+      <tr>
+        <td class="ItemName">
+          Gold Price (per gram)
+        </td>
+        <td class="ItemValue">
+          {{storedData.price}}
+        </td>
+      </tr>
+      <tr>
+        <td class="ItemName">
+          Weight (grams)
+        </td>
+        <td class="ItemValue">
+          {{storedData.weight}}
+        </td>
+      </tr>
+      <tr *ngIf="storedData.isPriviledged">
+        <td class="ItemName">
+          Discount
+        </td>
+        <td class="ItemValue">
+          {{storedData.discount}} {{storedData.discount != null ? ' %' : ''}}
+        </td>
+      </tr>
+      <tr>
+        <td class="ItemName">
+          Total Price
+        </td>
+        <td class="ItemValue">
+          {{storedData.totalPrice | number:'1.0-2'}}
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+<div class="col-12">
+  <button class="btn btn-primary" style="float: right;" (click)="OnClose()">Close</button>
+</div>
