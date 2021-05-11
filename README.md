@@ -1,3 +1,7 @@
+**PreRequisite:**
+Angular 11
+.Net Core 5
+
 # jewelry-store-challenge
 The assignment will consist of two parts:  
 • Frontend in React/Angular  
